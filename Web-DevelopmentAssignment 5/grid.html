@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .item1 {grid-area: header;}
+        .item2 {grid-area: side1;}
+        .item3 {grid-area: cent;}
+        .item4 {grid-area: side2;}
+        .item5 {grid-area: footer;}
+
+        .grid-container{
+            display: grid;
+            grid-template-areas: 
+                'header header header header header header'
+                'side1  cent cent cent cent side2'
+                'footer footer footer footer footer footer'
+            ;
+            font-size: xx-large;
+            text-align: center;
+        }
+        
+        .item1{
+            height: 80px;
+            background-color: orangered;
+        }
+        .item2{
+            background-color: yellow;
+            padding: 0px 160px;
+            height: 300px;
+        }
+        .item3{
+            background-color: rgb(100, 63, 220);
+            
+        }
+        .item4{
+            padding: 0px 160px;
+            background-color: palevioletred;
+            height: 300px;
+        }
+        .item5{
+            height: 80px;
+            background-color: rgb(91, 252, 198);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="item1">Header</div>
+        <div class="item2">Aside 1</div>
+        <div class="item3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium placeat impedit quos pariatur quia hic. Fuga minus corporis officiis minima nostrum error. Eaque saepe iure eveniet possimus incidunt repudiandae est.</div>
+        <div class="item4">Aside 2</div>
+        <div class="item5">Footer</div>
+    </div>
+</body>
+</html>
